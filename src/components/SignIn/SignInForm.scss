@@ -112,58 +112,55 @@
     margin-right: 10px;
   }
 }
+@media screen and (max-width: 900px) {
+  .singIn-Content {
+    .ant-card {
+      width: 100vh;
+      height: 80vh;
+      margin-top: 0px;
+    }
+    .img-container {
+      display: none;
+    }
+    .signIn-tittle {
+      font-weight: 400;
+      font-size: 38px;
+    }
 
-// @media screen and (max-width: 900px) {
-//   .singIn-Content {
-//     .ant-card {
-//       width: 100vh;
-//       height: 80vh;
-//       margin-top: 0px;
-//     }
-//     .img-container {
-//       display: none;
-//     }
-//     .signIn-tittle {
-//       font-weight: 400;
-//       font-size: 38px;
-//     }
+    .square-box-containers {
+      display: flex;
+      left: 163px;
+    }
 
-//     .square-box-containers {
-//       display: flex;
-//       left: 163px;
-//     }
+    .font-regular {
+      font-size: 25px;
+    }
+    .ant-form {
+      .ant-form-item {
+        .ant-form-item-required {
+          font-size: 28px;
+        }
+        .ant-form-item-required::before {
+          font-size: 18px !important;
+        }
+        .ant-input {
+          height: 47px;
+          background-color: #f1f0f0;
+          width: 95%;
+        }
 
-//     .font-regular {
-//       font-size: 25px;
-//     }
-//     .ant-form {
-//       .ant-form-item {
-//         .ant-form-item-required {
-//           font-size: 28px;
-//         }
-//         .ant-form-item-required::before {
-//           font-size: 18px !important;
-//         }
-//         .ant-input {
-//           height: 47px;
-//           background-color: #f1f0f0;
-//           width: 95%;
-//         }
+        .ant-input-password {
+          width: 95%;
+        }
+      }
+    }
+    .forgot-para {
+      font-weight: 400;
+      font-size: 16px;
+    }
 
-//         .ant-input-password {
-//           width: 95%;
-//         }
-//       }
-//     }
-//     .forgot-para {
-//       font-weight: 400;
-//       font-size: 16px;
-//     }
-
-//     .register-para .forgot-para {
-//       font-size: 16px;
-//     }
-//   }
-// }
-
-// ================images container css =================
+    .register-para .forgot-para {
+      font-size: 16px;
+    }
+  }
+}
