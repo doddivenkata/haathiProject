@@ -1,0 +1,52 @@
+.container-signup {
+  .card-header {
+    display: inline;
+  }
+  .card-nav-header-tittle{
+    text-align: center;
+  }
+  .ant-layout-content {
+    .register-form-card {
+      background-color: var(--card-background);
+      width: auto;
+      height: auto;
+      min-height: 592px;
+      min-width: 456px;
+      border-radius: 30px;
+    }
+    .ant-form-item-explain-error {
+      width: 334px;
+    }
+  }
+  #register-form1_password {
+    background-color: #f1f0f0;
+  }
+  #register-form1_cpassword {
+    background-color: #f1f0f0;
+  }
+  .respone-card {
+    width: 556px;
+    height: 297px;
+  }
+
+  .register-response-card {
+    background-color: var(--card-background);
+    width: auto;
+    height: auto;
+    min-height: 297px;
+    min-width: 535px;
+    border-radius: 30px;
+  }
+
+  .cardModel-para {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    width: 490px;
+    margin: 0px;
+    color: var(--primary-color);
+  }
+}

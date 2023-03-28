@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+
+:root {
+  --primary-color: #064b8a;
+  --main-heading-color: #132742;
+  --heading-color: #064b8a;
+  --t-background: transparent;
+  --card-background:#fff;
+  --btn-background: #78d391;
+  --bg-color: rgba(235, 246, 246) 27%;
+  --font-titles: "Abel", sans-serif;
+  --font-headings: "Poppins", sans-serif;
+}
+
+/* ======== reset default browser styles ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-name, --font-main);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 20px 30px;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover {
+  color: unset;
+}
+
+p > span {
+  color: #81addd;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* ============ reusable class =========*/

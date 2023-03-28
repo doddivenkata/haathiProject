@@ -1,0 +1,28 @@
+.ant-layout-footer {
+  .ant-avatar {
+    width: 40px;
+    height: 40px;
+    
+  }
+}
+
+
+.segment{
+  position:absolute;
+  width:99%;
+  height: 60vh;
+  .rsc{
+    height: 50vh;
+    .rsc-container{
+      width: 98%;
+      height: auto;
+      overflow-x: hidden;
+      .rsc-content{
+        height: 65vh;
+      }
+    }
+    .sc-content{
+      height: 100vh;
+    }
+  }
+}

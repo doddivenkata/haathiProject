@@ -1,0 +1,169 @@
+.singIn-Content {
+  .ant-card {
+    width: 40%;
+    border: none;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .nav-header {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+  }
+  .signIn-tittle {
+    position: absolute;
+    height: 58px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+  }
+  .anticon-border {
+    display: flex;
+    align-items: center;
+  }
+  .square-box-containers {
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+    height: 25px;
+    font-size: 30px;
+    position: absolute;
+    top: 40px;
+    left: 195px;
+  }
+
+  .font-regular {
+    font-size: 25px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 120%;
+    color: #6a6868;
+    margin: 10px 0 10px 0;
+  }
+  .ant-form {
+    .ant-form-item {
+      .ant-form-item-required {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+      }
+      .ant-form-item-required::before {
+        font-size: 28px !important;
+      }
+      .ant-input {
+        height: 47px;
+        background-color: #f1f0f0;
+        width: 70%;
+      }
+      .ant-btn {
+        width: 234px;
+        height: 43px;
+        background-color: var(--btn-background);
+        border-radius: 15px;
+      }
+      .ant-input-password {
+        padding: 0px;
+        padding-left: 12px;
+        background-color: #f1f0f0;
+        width: 70%;
+      }
+      .ant-input-suffix {
+        position: absolute;
+        right: 5%;
+        top: 33%;
+      }
+    }
+  }
+  .forgot-para {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    align-items: center;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+  }
+
+  .register-para .forgot-para {
+    font-size: 19px;
+  }
+
+  .resp-error-msg {
+    font-size: medium;
+    color: #ff4d4f;
+    margin-top: -5px;
+    margin-bottom: 3px;
+  }
+  .anticon svg {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+// @media screen and (max-width: 900px) {
+//   .singIn-Content {
+//     .ant-card {
+//       width: 100vh;
+//       height: 80vh;
+//       margin-top: 0px;
+//     }
+//     .img-container {
+//       display: none;
+//     }
+//     .signIn-tittle {
+//       font-weight: 400;
+//       font-size: 38px;
+//     }
+
+//     .square-box-containers {
+//       display: flex;
+//       left: 163px;
+//     }
+
+//     .font-regular {
+//       font-size: 25px;
+//     }
+//     .ant-form {
+//       .ant-form-item {
+//         .ant-form-item-required {
+//           font-size: 28px;
+//         }
+//         .ant-form-item-required::before {
+//           font-size: 18px !important;
+//         }
+//         .ant-input {
+//           height: 47px;
+//           background-color: #f1f0f0;
+//           width: 95%;
+//         }
+
+//         .ant-input-password {
+//           width: 95%;
+//         }
+//       }
+//     }
+//     .forgot-para {
+//       font-weight: 400;
+//       font-size: 16px;
+//     }
+
+//     .register-para .forgot-para {
+//       font-size: 16px;
+//     }
+//   }
+// }
+
+// ================images container css =================

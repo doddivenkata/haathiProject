@@ -1,0 +1,133 @@
+.errMsg-bg-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background: #f9f9f9;
+  border-radius: 24px;
+  justify-content: center;
+  height: 100%;
+}
+
+.connection-status {
+  font-style: "open Sans";
+  font-size: 2em;
+  text-align: center;
+  line-height: 2em;
+}
+
+.connection-msg {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  color: #064b8a;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.connect-button {
+  margin-top: 20px;
+  width: 234px;
+  height: 43px;
+  background: var(--btn-background);
+  color: #fff;
+  border-radius: 15px;
+}
+.modal-connect-button {
+  margin: 0px;
+  left: 20%;
+}
+
+.modal-haathi-log {
+  width: 35px;
+  height: 36px;
+  background: #d9d9d9;
+  border-radius: 40px;
+  padding: 7px;
+  margin-top: 6px;
+}
+.modal-haathi-title {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 24px;
+  position: initial;
+  margin-left: 6px;
+  color: #064b8a;
+  margin-top: 24px;
+}
+.haathi-logo-header {
+  .mode-step-title-bg {
+    align-self: center;
+  }
+}
+.square-icon {
+  background: var(--btn-background);
+  align-self: center;
+  margin-right: 2px;
+}
+
+.connected-modal {
+  text-align: center;
+  color: rgb(31, 54, 159);
+}
+.connected-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.modal-content-title {
+  text-align: center;
+  font-size: 24px;
+  color: #064b8a;
+  font-weight: 600;
+  font-family: "open sans-serif";
+}
+.modal-content-para {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32.12px;
+  color: #064b8a;
+  font-family: "open sans-serif";
+}
+.modal-conent-para2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21.12px;
+  color: #064b8a;
+  font-family: "open sans-serif";
+}
+.progressbar {
+  position: relative;
+  overflow: hidden;
+  width: 350px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #eee;
+  margin-top: 30px;
+}
+
+.progressPercent {
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #eee;
+  text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  -webkit-box-shadow: inset 100px 0 0 0 #7c54d1;
+  box-shadow: inset 100px 0 0 0 #7c54d1;
+}

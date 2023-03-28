@@ -1,0 +1,95 @@
+.card-bg-container {
+  background: #fff;
+  border-radius: 25px;
+  width: 781px;
+  height: 310px;
+}
+
+#ant-card-head {
+  background-color: red;
+}
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  
+}
+.card-heading {
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: "SemiBold";
+  font-size: 32px;
+  line-height: 44px;
+  line-height: 100%;
+  vertical-align: top;
+  color: #064b8a;
+  margin-top: 1px;
+  margin-bottom: 10px;
+}
+.steps-box {
+  display: flex;
+}
+.card-para {
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-size:1.5em;
+  vertical-align: top;
+  color: #064b8a;
+  margin-top: 5px;
+  width:auto;
+}
+
+.step-2para{
+  width: 600px;
+}
+
+.step-3para{
+  width: 700px;
+}
+.card-button {
+  position: absolute;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  line-height: 100%;
+  text-align: center;
+  vertical-align: Top;
+  color: #064b8a;
+  background-color: #78d391;
+  width: 163px;
+  height: 35px;
+}
+
+.button-space {
+  top: 268px;
+  left: 298px;
+}
+
+@media screen and (max-width: 992px) {
+  .card-bg-container {
+    width: 381px;
+    height: 460px;
+  }
+  .card-button {
+    left: 98px;
+  }
+}
+
+.header-card-button {
+  background-color: #ebf6f6;
+  border-radius: 30px;
+  border-color: #064b8a;
+}
+
+.next-link {
+  font-family: "Open Sans";
+  font-style: "ExtraBold";
+  font-size: 28px;
+  line-height: 38px;
+  line-height: 100%;
+  text-align: end;
+  color: #064b8a;
+  font-weight: 700;
+  margin-right: 4px;
+}
