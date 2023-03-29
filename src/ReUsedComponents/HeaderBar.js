@@ -6,14 +6,12 @@ const { Title } = Typography;
 export const HeaderBar = () => {
   return (
     <Header className="header-nav-container">
-      <h1 className="nav-Header-title">
-        <img
-          className="nav-header-haathi-log"
-          src="HaathiLog.svg"
-          alt="log"
-        ></img>
-        Haathi.ai
-      </h1>
+      <img
+        className="nav-header-haathi-log"
+        src="HaathiLog.svg"
+        alt="log"
+      ></img>
+      <h1 className="nav-Header-title">Haathi.ai</h1>
     </Header>
   );
 };

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Layout, Avatar, DatePicker } from "antd";
-import {SearchOutlined} from '@ant-design/icons';
-import './layout.scss'
+import { SearchOutlined } from "@ant-design/icons";
+import "./layout.scss";
 import Sidenav from "./Sidenav";
 import HeaderNav from "./HeaderNav";
-import { AskHaathiSearch } from "../chatBot/HaathiChatBot"
+import { AskHaathiSearch } from "../chatBot/HaathiChatBot";
 import { Footer } from "antd/es/layout/layout";
 import { DashboardContextValue } from "../../useContext/ContextValues";
 import haathilog from "../../assets/images/haathilogo.png";
@@ -24,9 +24,9 @@ const Main = ({ children }) => {
     });
   };
 
-  const dateSerachHandle =(value)=>{
-    console.log(value)
-  }
+  const dateSerachHandle = (value) => {
+    console.log(value);
+  };
 
   return (
     <>
@@ -39,7 +39,7 @@ const Main = ({ children }) => {
               <nav className="bg-header-container">
                 <div className="header-div1">
                   <img
-                    src='HaathiLog.svg'
+                    src="HaathiLog.svg"
                     alt="haathi-text"
                     className="layout-haathi-log"
                   />
@@ -47,7 +47,10 @@ const Main = ({ children }) => {
                 <form className="header-div2">
                   <h1 className="nav-form-tittle">From</h1>
                   <RangePicker />
-                  <SearchOutlined className="search-icon" onClick={dateSerachHandle}/>
+                  <SearchOutlined
+                    className="search-icon"
+                    onClick={dateSerachHandle}
+                  />
                 </form>
               </nav>
 
@@ -63,17 +66,14 @@ const Main = ({ children }) => {
                   <Content
                     style={{
                       margin: "0 16px",
-                      paddingTop:'0px',
+                      paddingTop: "0px",
                     }}
                   >
                     <HeaderNav />
 
-                    <div className="main-container">
-                      {open.search && <AskHaathiSearch />}
-                      {children}
-                    </div>
+                    <div className="main-container">{children}</div>
                   </Content>
-                  {!connectedCom && (
+                  {/* {!connectedCom && (
                     <Footer className="main-footer-container">
                       {open.logo && (
                         <Avatar
@@ -82,8 +82,8 @@ const Main = ({ children }) => {
                           onClick={handleExpand}
                         />
                       )}
-                    </Footer>
-                  )}
+                    </Footer> */}
+                 
                 </Layout>
               </Layout>
             </div>

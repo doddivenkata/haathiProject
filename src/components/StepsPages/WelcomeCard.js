@@ -4,6 +4,7 @@ import { Card, Avatar, Typography } from "antd";
 import { useNavigate } from "react-router-dom";
 import { StepsContextValue } from "../../useContext/ContextValues";
 import { CardHeaderBar } from "../../ReUsedComponents/HeaderBar";
+import { FooterBar, SquareBoxs } from "../../ReUsedComponents/FooterBar";
 import "./StepsPages.scss";
 import "./steps.css";
 import { Button } from "antd";
@@ -12,7 +13,6 @@ import {
   BorderOutlined,
   CaretRightOutlined,
 } from "@ant-design/icons";
-
 import hlogo from "../../assets/images/haathilogo.png";
 import shopify from "../../assets/images/shopify.png";
 import messageLog from "../../assets/images/icons/Frame(2).svg";
@@ -67,22 +67,16 @@ export const WelcomeCard = () => {
         </Button>
       }
       className="card-bg-container"
-      style={{ height: "300px" }}
     >
       <h1 className="card-heading">Welcome *first Name</h1>
       <p className="card-para">
-        Hi! I,m Haathi and I'll explain you how to connect your <br /> data ad
-        set-up dashboards step by step ! it's easy
+        Hi! I,m Haathi and I'll explain you how to connect your data ad set-up
+        dashboards step by step ! it's easy
       </p>
-
-      <Button
-        type="button"
-        htmlType="submit"
-        className="card-button button-space"
-        onClick={startHandle}
-      >
-        Yes Show me! {<ArrowRightOutlined />}
+      <Button className="welcome-card-ant-btn" onClick={startHandle}>
+        Yes Show me! <ArrowRightOutlined />
       </Button>
+      <FooterBar />
     </Card>
   );
 };
@@ -100,58 +94,26 @@ export const ExplainationCard = () => {
 
   return (
     <>
-      <Card
-        title={
-          <nav className="step2-logo-header ">
-            <Title
-              style={{ color: "#064B8A" }}
-              className="step2-logo-title"
-              level={3}
-            >
-              <Avatar
-                size={45}
-                src={hlogo}
-                style={{ backgroundColor: "#D9D9D9", marginRight: "6px" }}
-              ></Avatar>
-              Haathi.ai
-            </Title>
-          </nav>
-        }
-        extra={
-          <div className="steps-box">
-            <div className="icon">
-              <BorderOutlined style={{ backgroundColor: "#80C28D" }} />
-            </div>
-            <div className="icon">
-              <BorderOutlined style={{ backgroundColor: "#FCC360" }} />
-            </div>
-            <div className="icon">
-              <BorderOutlined style={{ backgroundColor: "#81ADDD" }} />
-            </div>
-          </div>
-        }
-      >
-        <Typography className="card-para">
+      <Card title={<CardHeaderBar />} extra={<SquareBoxs />}>
+        <p className="card-para exp-para">
           Let me show you how the process looks like. There are 3 simple steps
           to go through to help me organize your data.
-        </Typography>
+        </p>
       </Card>
 
-      <Card className="three-steps-card-container">
+      <div className="three-steps-card-container  ">
         <Card
           title={
-            <nav className="step2-logo-header ">
-              <Title>
-                <BorderOutlined
-                  width={10}
-                  style={{ backgroundColor: "#80C28D" }}
-                />
-                step 1
-              </Title>
-            </nav>
+            <div className="footer-nav">
+              <div className="box" id="box1"></div>
+              <h1 className="steps-headings">Step 1</h1>
+            </div>
           }
         >
-          <h1 className="explain-para">Connect your data via Shopify!</h1>
+          <h1 className="explain-para">
+            Connect your data via
+            <br /> Shopify!
+          </h1>
 
           <img
             src={shopify}
@@ -165,15 +127,10 @@ export const ExplainationCard = () => {
         <Arrow />
         <Card
           title={
-            <nav className="step2-logo-header ">
-              <Title>
-                <BorderOutlined
-                  width={10}
-                  style={{ backgroundColor: "#FCC360" }}
-                />
-                step 2
-              </Title>
-            </nav>
+            <div className="footer-nav">
+              <div className="box" id="box2"></div>
+              <h1 className="steps-headings">Step 3</h1>
+            </div>
           }
         >
           <h1 className="explain-para">Wait for confirmation!</h1>
@@ -190,19 +147,15 @@ export const ExplainationCard = () => {
         <Arrow />
         <Card
           title={
-            <nav className="step2-logo-header ">
-              <Title>
-                <BorderOutlined
-                  width={10}
-                  style={{ backgroundColor: "#81ADDD" }}
-                />
-                step 3
-              </Title>
-            </nav>
+            <div className="footer-nav">
+              <div className="box" id="box3"></div>
+              <h1 className="steps-headings">Step 3</h1>
+            </div>
           }
         >
           <h1 className="explain-para">
-            Access your pre-populated dashboards & users!
+            Access your pre-populated
+            <br /> dashboards & users!
           </h1>
 
           <img
@@ -214,10 +167,9 @@ export const ExplainationCard = () => {
 
           <div className="explain-btn-div">Access </div>
         </Card>
-      </Card>
-
+      </div>
       <h1 className="next-link" id="to-steps" onClick={stepsStartHandle}>
-        TO STEPS
+        Let’s Start
         <CaretRightOutlined />
       </h1>
     </>
@@ -245,27 +197,14 @@ export const StepOne = () => {
 
   return (
     <Card
-      title={
-        <nav className="step2-logo-header ">
-          <Title
-            style={{ color: "#064B8A" }}
-            className="step2-logo-title"
-            level={3}
-          >
-            <Avatar
-              size={45}
-              src={hlogo}
-              style={{ backgroundColor: "#D9D9D9", marginRight: "6px" }}
-            ></Avatar>
-            Haathi.ai
-          </Title>
-        </nav>
-      }
+      title={<CardHeaderBar />}
       extra={
-        <Title>
-          <BorderOutlined width={10} style={{ backgroundColor: "#80C28D" }} />
-          step 1/3
-        </Title>
+        <div className="footer-nav">
+          <div className="box" id="box1"></div>
+          <h1 className="steps-headings" style={{ marginTop: "-7px" }}>
+            Step 1
+          </h1>
+        </div>
       }
       actions={[
         <Button className="gray-btn" onClick={stepBackHandle}>
@@ -280,7 +219,7 @@ export const StepOne = () => {
     >
       <h1 className="card-heading">Connect your data sources!</h1>
 
-      <img src={shopify} alt="icon" width={50} />
+      <img src={shopify} className="steps-icon" alt="icon" width={50} />
 
       <p className="card-para">
         Navigate to Sources-tab to integrate data from Shopify! Use your
@@ -315,27 +254,14 @@ export const StepTwo = () => {
   };
   return (
     <Card
-      title={
-        <nav className="step2-logo-header ">
-          <Title
-            style={{ color: "#064B8A" }}
-            className="step2-logo-title"
-            level={3}
-          >
-            <Avatar
-              size={45}
-              src={hlogo}
-              style={{ backgroundColor: "#D9D9D9", marginRight: "6px" }}
-            ></Avatar>
-            Haathi.ai
-          </Title>
-        </nav>
-      }
+      title={<CardHeaderBar />}
       extra={
-        <Title>
-          <BorderOutlined width={10} style={{ backgroundColor: "#FCC360" }} />
-          step 2/3
-        </Title>
+        <div className="footer-nav">
+          <div className="box" id="box2"></div>
+          <h1 className="steps-headings" style={{ marginTop: "-7px" }}>
+            Step 2
+          </h1>
+        </div>
       }
       actions={[
         <Button className="gray-btn" onClick={stepBackHandle}>
@@ -348,11 +274,11 @@ export const StepTwo = () => {
       className="card-bg-container"
     >
       <h1 className="card-heading">
-        We will fetch your data tables and arrange the data
+        We will fetch your data<br/> tables and arrange the data
       </h1>
-      <div>
-        <img src={loadingIcon} alt="icon" width={190} />
-      </div>
+
+      <img src={loadingIcon} className="steps-icon" alt="icon" width={190} />
+
       <p className="card-para step-2para">
         We will fetch your data tables from Shopify and arrange the data in your
         personal Haathi data warehouse. This process might take up to 1 hour!”.
@@ -388,27 +314,14 @@ export const StepThree = () => {
 
   return (
     <Card
-      title={
-        <nav className="step2-logo-header ">
-          <Title
-            style={{ color: "#064B8A" }}
-            className="step2-logo-title"
-            level={3}
-          >
-            <Avatar
-              size={45}
-              src={hlogo}
-              style={{ backgroundColor: "#D9D9D9", marginRight: "6px" }}
-            ></Avatar>
-            Haathi.ai
-          </Title>
-        </nav>
-      }
+      title={<CardHeaderBar />}
       extra={
-        <Title>
-          <BorderOutlined width={10} style={{ backgroundColor: "#81ADDD" }} />
-          step 3/3
-        </Title>
+        <div className="footer-nav">
+          <div className="box" id="box3"></div>
+          <h1 className="steps-headings" style={{ marginTop: "-7px" }}>
+            Step 3
+          </h1>
+        </div>
       }
       actions={[
         <Button className="gray-btn" onClick={stepBackHandle}>
@@ -422,9 +335,9 @@ export const StepThree = () => {
       className="card-bg-container"
     >
       <h1 className="card-heading">Access your pre-populated dashboards!</h1>
-      <div>
-        <img src={shopify} alt="icon" width={50} />
-      </div>
+
+      <img src={shopify} className="steps-icon" alt="icon" width={50} />
+
       <p className="card-para step-3para ">
         After synchronization I’ll show you your data via set dashboards. You
         can see them on main-page. ?OBS! You can assign specific roles to users.
@@ -450,35 +363,8 @@ export const AskMe = () => {
 
   return (
     <Card
-      title={
-        <nav className="step2-logo-header ">
-          <Title
-            style={{ color: "#064B8A" }}
-            className="step2-logo-title"
-            level={3}
-          >
-            <Avatar
-              size={45}
-              src={hlogo}
-              style={{ backgroundColor: "#D9D9D9", marginRight: "6px" }}
-            ></Avatar>
-            Haathi.ai
-          </Title>
-        </nav>
-      }
-      extra={
-        <div className="steps-box">
-          <div className="icon">
-            <BorderOutlined style={{ backgroundColor: "#80C28D" }} />
-          </div>
-          <div className="icon">
-            <BorderOutlined style={{ backgroundColor: "#FCC360" }} />
-          </div>
-          <div className="icon">
-            <BorderOutlined style={{ backgroundColor: "#81ADDD" }} />
-          </div>
-        </div>
-      }
+      title={<CardHeaderBar />}
+      extra={<SquareBoxs />}
       actions={[
         <Button onClick={stepBackHandle}>Back</Button>,
         <Button className="gray-btn">Read more</Button>,
@@ -489,9 +375,9 @@ export const AskMe = () => {
       className="card-bg-container"
     >
       <h1 className="card-heading">Ask Me!</h1>
-      <div>
-        <img src={shopify} alt="icon" width={40} />
-      </div>
+
+      <img src={shopify} className="steps-icon" alt="icon" width={40} />
+
       <p className="card-para">
         Ask me whatever you want or need to know! I’ll give you answers on
         specific questions, based on your data from Shopify.

@@ -1,194 +1,138 @@
+//==================welcome page css=========================
+
+//override css
 .card-bg-container {
   .ant-card-head {
     border-bottom: 1px;
-  }
-}
-
-.arrow-container {
-  color: #064b8a;
-  margin-top: 90px;
-}
-
-/* explanation page css */
-.explanation-container {
-  .ant-card {
-    background-color: #fff;
-    width: 527px;
-    height: 236px;
-    margin: 20px;
-  }
-  .ant-card-head {
-    border-bottom: 1px;
-  }
-  .steps-box {
-    display: flex;
-  }
-  .three-steps-card-container {
-    .ant-card {
-      background-color: #fff;
-      width: 527px;
-      height: 236px;
-      margin: 20px;
-      .ant-card-head-title {
-        background-color: #fff;
-        margin: 0px;
-        .step2-logo-header {
-          .ant-typography {
-            margin: auto;
-          }
-        }
-      }
-    }
-
-    background-color: #fff;
-    display: inherit;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    padding-bottom: 10px;
-  }
-  .three-steps-card-container {
-    .ant-card-body {
-      display: inherit;
-      .ant-card {
-        text-align: center;
-      }
-    }
-    .ant-card {
-      width: 30%;
-      height: 236px;
-      margin: 20px;
-      border: none;
-    }
-
-    .explain-para {
-      font-family: "open sans-serif";
-      font-weight: 600;
-      font-size: 28px;
-      line-height: 38.13px;
-      text-align: center;
-      margin: auto;
-      color: #064b8a;
-    }
-
-    .icons {
-      position: absolute;
-      left: 39.76%;
-      right: 48.43%;
-      bottom: 47.85%;
-    }
-    .icon-shopify {
-      top: 73.06%;
-    }
-    .icon-message {
-      top: 65.06%;
-    }
-    .icon-dashboard {
-      top: 67.06%;
-    }
-    .ant-btn {
-      width: 197px;
-      height: 35px;
-      border-radius: 15px;
-      background-color: #78d391;
-      color: white;
-      padding: 3px;
-    }
-    .anticon-border {
-      margin-right: 10px;
-    }
-  }
-
-  @media screen and (max-width: 900px) {
-    .ant-card {
-      background-color: #fff;
-      width: auto;
-      margin: 5px;
-    }
-    .three-steps-card-container {
-      display: initial;
-      flex-direction: row;
-      background-color: #fff;
-      width: auto;
-      height: auto;
-    }
-    .three-steps-card-container {
-      .ant-card {
-        width: auto;
-        height: 236px;
-        margin: 20px;
-        margin-top: 30px;
-        border: none;
-        .explain-para {
-          font-weight: 200;
-          font-size: 18px;
-        }
-        .icons {
-          top: 60%;
-        }
-      }
-    }
-    .arrow-container {
-      display: none;
-      color: #064b8a;
-      margin-top: 90px;
-    }
-    .explain-btn-div {
-      top: 91%;
-      left: 25%;
-    }
-  }
-}
-
-.card-bg-container {
-  .ant-card-actions {
-    border: none;
   }
   .ant-card-body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 0px;
-
-    .ant-card-actions {
-      .ant-btn-default {
-        background: #ebf6f6;
-        width: 133px;
-        height: 35px;
-        border-radius: #000000;
-        border-radius: 15px;
-        border-color: #000000;
-      }
+    padding: 0px 2px;
+  }
+  .ant-card-actions {
+    border: none;
+    border-radius: inherit;
+    li {
+      border: none;
     }
-    .steps-box {
-      display: flex;
+  }
+  .footer-nav {
+    .box {
+      width: 17px;
+      height: 17px;
     }
   }
 }
-.explain-btn-div {
-  background: var(--btn-background);
-  width: 197px;
-  height: 37px;
-  text-align: center;
-  color: white;
-  border-radius: 15px;
-  padding-top: 7px;
-  position: absolute;
-  position: absolute;
-  left: 27.39%;
-  right: 37.99%;
-  top: 100.02%;
-  bottom: 29.18%;
-}
-.next-link:hover {
-  background: var(--btn-background);
-  padding: 12px;
-  border-radius: 15px;
-  margin-right: 5px;
-  color: #fff;
-  width: 220px;
-  text-align: center;
-  align-self: end;
+
+/* explanation page css */
+.explanation-container {
+  //top card css
+  .ant-card {
+    background-color: #fff;
+    width: 527px;
+    height: auto;
+    padding: 1% 2% 1% 2%;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px rgba(39, 43, 76, 0.32);
+  }
+  .ant-card-head {
+    border-bottom: 1px;
+  }
+  .ant-card-body {
+    padding: 0 5px;
+    margin: 0px;
+  }
+  .footer-nav {
+    .box {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  // ===================== explanation pages css ========================
+  .three-steps-card-container {
+    .ant-card {
+      border: none;
+      box-shadow: none;
+      .ant-card-head {
+        border-bottom: 1px;
+      }
+      .ant-card-body {
+        display: inherit;
+        background-color: var(--t-background);
+        height: auto;
+      }
+      .steps-headings {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2em;
+        line-height: 33px;
+        color: #064b8a;
+      }
+      .explain-para {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5em;
+        line-height: 38px;
+        text-align: center;
+        color: #064b8a;
+        margin-right: 3px;
+      }
+      .box {
+        width: 25px;
+        height: 25px;
+      }
+      .icons {
+        position: absolute;
+        left: 43.76%;
+        right: 48.43%;
+        bottom: 47.85%;
+      }
+      .icon-shopify {
+        top: 62.06%;
+      }
+      .icon-message {
+        top: 56.06%;
+      }
+      .icon-dashboard {
+        top: 57.06%;
+      }
+      .explain-btn-div {
+        top: 91%;
+        left: 32%;
+      }
+    }
+  }
+
+  // =============================all cards pages css ========================
+
+  .card-bg-container {
+    .ant-card-actions {
+      border: none;
+    }
+    .ant-card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 0px;
+
+      .ant-card-actions {
+        .ant-btn-default {
+          background: #ebf6f6;
+          width: 133px;
+          height: 35px;
+          border-radius: 15px;
+          border-color: #000000;
+        }
+      }
+      .steps-box {
+        display: flex;
+      }
+    }
+  }
 }

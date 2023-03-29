@@ -2,7 +2,7 @@ import React from "react";
 import { Layout } from "antd";
 import { HeaderBar } from "../ReUsedComponents/HeaderBar";
 import backgroundImg from "../assets/images/icons/Clip path group.svg";
-import FooterBar from "../ReUsedComponents/FooterBar";
+import {FooterBar} from "../ReUsedComponents/FooterBar";
 import ForgotForm from "../components/ForgetPage/ForgotForm";
 const { Content } = Layout;
 

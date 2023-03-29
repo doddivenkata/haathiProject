@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Card, Button, Form, Input } from "antd";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link, NavLink } from "react-router-dom";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { CardHeaderBar } from "../../ReUsedComponents/HeaderBar";
 import "./ForgotForm.scss";
@@ -46,13 +46,15 @@ const ForgotForm = () => {
                 type="button"
                 htmlType="submit"
                 className="main-btn"
-                onClick={() => navigate("./signIn")}
+                onClick={() => {
+                  navigate("/SignIn");
+                }}
               >
                 To main page
               </Button>
 
               <Button type="button" htmlType="submit" className="send-btn">
-                Send my
+                Send my password
               </Button>
             </div>
           </Form>
@@ -69,7 +71,9 @@ const ForgotForm = () => {
               type="button"
               htmlType="submit"
               className="main-btn"
-              onClick={() => navigate("./signIn")}
+              onClick={() => {
+                navigate("/SignIn");
+              }}
             >
               To main page
             </Button>

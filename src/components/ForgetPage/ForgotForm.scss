@@ -41,6 +41,8 @@
     }
     .send-btn {
       background: linear-gradient(180deg, #78d391 56.25%, #6fc186 100%);
+      color: white;
+      border: none;
     }
   }
 
@@ -62,8 +64,8 @@
     .ant-card {
       border-radius: 20px;
       box-shadow: 7px 7px 10px rgba(39, 43, 76, 0.32);
-      width:350px;
-      height:300px;
+      width: 350px;
+      height: 300px;
     }
   }
 }

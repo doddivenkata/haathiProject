@@ -1,17 +1,14 @@
 .card-bg-container {
   background: #fff;
   border-radius: 25px;
-  width: 781px;
-  height: 310px;
+  width: 745px;
+  height: auto;
+  padding-top: 10px;
 }
 
-#ant-card-head {
-  background-color: red;
-}
 .footer-nav {
   display: flex;
   justify-content: center;
-  
 }
 .card-heading {
   text-align: center;
@@ -28,23 +25,40 @@
 .steps-box {
   display: flex;
 }
+.arrow-container {
+  color: #064b8a;
+  margin-top: 90px;
+}
 .card-para {
   text-align: center;
   font-family: "Open Sans";
   font-style: normal;
-  font-size:1.5em;
+  font-size: 1.5em;
   vertical-align: top;
   color: #064b8a;
-  margin-top: 5px;
-  width:auto;
+  display: flex;
+  align-self: center;
+  margin-bottom: 1%;
 }
-
-.step-2para{
+.exp-para {
+  text-align: start;
+  margin: 0% 0%;
+}
+.step-2para {
   width: 600px;
 }
 
-.step-3para{
+.step-3para {
   width: 700px;
+}
+.welcome-card-ant-btn {
+  background: #78d391;
+  width: 163px;
+  height: 35px;
+  align-self: center;
+  border-radius: 15px;
+  border-color: #000000;
+  margin-top: 2%;
 }
 .card-button {
   position: absolute;
@@ -92,4 +106,49 @@
   color: #064b8a;
   font-weight: 700;
   margin-right: 4px;
+}
+
+/* // explaination 2nd card css// */
+
+.three-steps-card-container {
+  height: 337px;
+  padding: 0px 20px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+
+.explain-btn-div {
+  background: var(--btn-background);
+  width: 197px;
+  height: 37px;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  padding-top: 7px;
+  position: absolute;
+  position: absolute;
+  left: 30.39%;
+  right: 37.99%;
+  top: 100.02%;
+  bottom: 29.18%;
+}
+.next-link {
+  margin-top: 20px;
+}
+.next-link:hover {
+  background: var(--btn-background);
+  padding: 12px;
+  border-radius: 15px;
+  margin-right: 5px;
+  color: #fff;
+  width: 220px;
+  text-align: center;
+  align-self: end;
+  cursor: pointer;
+}
+.steps-icon {
+  display: flex;
+  align-self: center;
+  margin: 10px 0px;
 }
