@@ -5,21 +5,6 @@ import { Segment } from "semantic-ui-react";
 
 import { Modal } from "antd";
 
-// export const HaathiChatBot = () => {
-//   const [open, isOpen] = useState({ logo: true, search: false, chat: false });
-
-//   const handleExpand = () => {
-//     console.log("expanded");
-//     isOpen({
-//       ...open,
-//       logo: !open.logo,
-//       search: !open.search,
-//     });
-//   };
-
-//   return <>{open.logo && <Avatar src={haathilog} alt="log" />}</>;
-// };
-
 export const AskHaathiSearch = () => {
   const steps = [
     {
@@ -90,11 +75,11 @@ export const AskHaathiSearch = () => {
   ];
   return (
     <>
-      <Modal>
-        <Segment floated="center">
-          <ChatBot steps={steps} />
-        </Segment>
-      </Modal>
+      <Segment floated="right">
+        <ChatBot steps={steps} />
+      </Segment>
     </>
   );
 };
+
+export default AskHaathiSearch;

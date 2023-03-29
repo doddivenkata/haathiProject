@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout } from "antd";
 import { HeaderBar } from "../ReUsedComponents/HeaderBar";
-import FooterBar from "../ReUsedComponents/FooterBar";
+import {FooterBar} from "../ReUsedComponents/FooterBar";
 import RegisterForm from "../components/Register/RegisterForm";
 import backgroundImg from "../assets/images/icons/Clip path group.svg";
 

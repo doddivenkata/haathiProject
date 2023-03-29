@@ -329,13 +329,13 @@ const ErrorComponent = () => {
       >
         <div>
           <Header className="haathi-logo-header form-header">
-          <CardHeaderBar/>
+          <CardHeaderBar />
 
             <div className="connect-pop-header-colum">
               <div className="mode-step-title-bg">
                 <BorderOutlined className="square-icon" />
               </div>
-              <h3>step1</h3>
+              <h3 className="steps-heading-modal">step1</h3>
             </div>
           </Header>
           <div>

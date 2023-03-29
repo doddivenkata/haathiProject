@@ -4,10 +4,10 @@ const Protected = ({ children }) => {
   const token = localStorage.getItem("token");
   const navigate = useNavigate();
   React.useEffect(() => {
-    if (false) {
+    if (!token) {
       navigate("/signIn");
     }
-  },[]);
+  }, []);
 
   return children;
 };

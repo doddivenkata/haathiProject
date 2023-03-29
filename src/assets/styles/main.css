@@ -3,9 +3,10 @@
   background-color: transparent;
   width: 100%;
   height: 10%;
+  display: flex;
 }
 .nav-Header-title {
-  position: absolute;
+  position: relative;
   z-index: 1;
   font-size: 51px;
   font-family: "Abel";
@@ -47,6 +48,7 @@
   background: #ffffff;
   background-size: cover;
   height: 100vh;
+  padding: 20px 40px;
 }
 
 .singIn-Content {
@@ -59,7 +61,7 @@
 
 .green-btn {
   background: var(--btn-background);
-  color: #000000;
+  color: #fff;
 }
 .gray-btn {
   background-color: #ebf6f6;
@@ -67,10 +69,9 @@
 }
 
 .box {
-  min-height: 25ps;
-  min-width: 25px;
-  margin-right: 5px;
   height: 25px;
+  width: 25px;
+  margin-right: 5px;
 }
 #box1 {
   background: var(--btn-background);
@@ -361,7 +362,6 @@ h2 {
   font-size: 24px;
   line-height: 33px;
   text-align: center;
-
   color: #a25c5c;
 }
 .connect-now-popUp {
@@ -401,7 +401,7 @@ h2 {
   font-family: "Open Sans";
   font-weight: "400";
   font-size: 24px;
-  top: 5.5%;
+  top: 4%;
   right: 5%;
   cursor: pointer;
 }
@@ -416,9 +416,11 @@ h2 {
   top: -60%;
   filter: blur(1px);
 }
+
+/*  <<<<<<<<<<<<<<<<< explanation layout-container flex-direction css//// */
 .bg-cards-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -426,8 +428,9 @@ h2 {
   display: flex;
   flex-direction: column;
   background-size: cover;
-  height: 100vh;
 }
+
+/* >>>>>>>>>>>>>>>>>>> explanation layout-container flex-direction css//// */
 
 .Footer-bg-container {
   background: transparent;
@@ -436,4 +439,18 @@ h2 {
 }
 .card-header {
   display: inline;
+}
+
+/* <<<<<<<<<<<<<<<<<====reports css============== */
+
+.reports-card-container {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+.reports-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }

@@ -27,7 +27,7 @@ const SignInform = () => {
     if (values?.email && values?.password) {
       console.log("Api call");
       const signInAPI = await FetchData(
-        process.env.REACT_APP_LOCAL_API_KEY + "/login",
+        process.env.REACT_APP_BACKEND_API + "/auth/login",
         "POST",
         null,
         body
@@ -43,6 +43,7 @@ const SignInform = () => {
         navigate("/signInWelcome");
       }
     }
+    setLoading(false);
   };
 
   React.useEffect(() => {
